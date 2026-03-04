@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test'
 import { Register } from '../../pages/register'
+import { randomInt } from 'node:crypto';
 
 test('Deve registrar usuário com dados válidos', async ({page}) => {
 
@@ -7,8 +8,8 @@ test('Deve registrar usuário com dados válidos', async ({page}) => {
     await registro.goto();
     await expect(page).toHaveURL('https://automationexercise.com');
 
-
-    await registro.registrarPrimeiraEtapa('fulano', 'fulano01902123123@gmail.com');
+    const randomNumber = randomInt(400);
+    await registro.registrarPrimeiraEtapa('fulano', `fulano${randomNumber}@gmail.com`);
     await expect(page).toHaveURL('https://automationexercise.com/signup');
     await expect(page.getByText('Enter Account Information')).toBeVisible();
 
