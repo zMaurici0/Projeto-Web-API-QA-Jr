@@ -66,15 +66,15 @@ export class Register{
         await this.createbutton.click()
     }
 
-    async ContaCriada(){
+    async contaCriada(){
         await this.continuebutton.click()
     }
 
-    async LogoutConta(){
+    async logoutConta(){
         await this.logoutaccount.click()
     }
 
-    async DeletarConta(){
+    async deletarConta(){
         await this.deleteaccount.click()
     }
 }

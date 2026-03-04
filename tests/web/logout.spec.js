@@ -2,13 +2,14 @@ import {test, expect} from '@playwright/test'
 import { Register } from '../../pages/register'
 import { randomInt } from 'node:crypto';
 
-test('Deve registrar usuário com dados válidos', async ({page}) => {
+const randomNumber = randomInt(1000000);
+
+test.beforeEach('Registrar o usuário', async ({page}) => {
 
     const registro = new Register(page);
     await registro.goto();
     await expect(page).toHaveURL('https://automationexercise.com');
 
-    const randomNumber = randomInt(1000000);
     await registro.registrarPrimeiraEtapa('fulano', `fulano${randomNumber}@gmail.com`);
     await expect(page).toHaveURL('https://automationexercise.com/signup');
     await expect(page.getByText('Enter Account Information')).toBeVisible();
@@ -32,17 +33,16 @@ test('Deve registrar usuário com dados válidos', async ({page}) => {
     await registro.contaCriada();
     await expect(page.locator('li').nth(10)).toBeVisible();
 
-    await registro.deletarConta();
-    await expect(page.locator('[data-qa="account-deleted"]')).toBeVisible();;
 })
 
-test('Deve retornar erro de email já existente', async ({page}) => {
+test('Deve fazer logout', async ({page}) => {
 
     const registro = new Register(page);
     await registro.goto();
     await expect(page).toHaveURL('https://automationexercise.com');
+    await expect(page.locator('li').nth(10)).toBeVisible();
 
-    await registro.registrarPrimeiraEtapa('fulano', 'fulano@gmail.com');
-    await expect(page).toHaveURL('https://automationexercise.com/signup');
-    await expect(page.getByText('Email Address already exist!')).toBeVisible()
+    await registro.logoutConta();
+    await expect(page).toHaveURL('https://automationexercise.com/login');
 })
+

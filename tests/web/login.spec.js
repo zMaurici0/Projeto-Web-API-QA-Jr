@@ -3,7 +3,7 @@ import { Register } from '../../pages/register'
 import { Login } from '../../pages/login';
 import { randomInt } from 'node:crypto';
 
-const randomNumber = randomInt(400);
+const randomNumber = randomInt(1000000);
 
 test.beforeEach('Deve criar novo usuário', async ({page}) => {
 
@@ -31,10 +31,10 @@ test.beforeEach('Deve criar novo usuário', async ({page}) => {
     });
     await expect(page.getByText('Account Created!')).toBeVisible();
 
-    await registro.ContaCriada();
+    await registro.contaCriada();
     await expect(page.locator('li').nth(10)).toBeVisible();
 
-    await registro.LogoutConta();
+    await registro.logoutConta();
 })
 
 test('Deve fazer login com as informações corretas', async ({page}) => {
@@ -46,7 +46,7 @@ test('Deve fazer login com as informações corretas', async ({page}) => {
     await expect(page.locator('li').nth(10)).toBeVisible();
 
     const registro = new Register(page);
-    registro.DeletarConta();
+    await registro.deletarConta();
     await expect(page.locator('[data-qa="account-deleted"]')).toBeVisible();;
 }) 
 
@@ -56,6 +56,6 @@ test('Deve retornar erro "Your email or password is incorrect!"', async ({page})
 
     //fazendo login 
     const login = new Login(page)
-    await login.loginUser(`Nome123123@gmail.com`, 'senha123')
+    await login.loginUser(`Nome@gmail.com`, 'senha123')
     await expect(page.getByText('Your email or password is incorrect!')).toBeVisible()
 })  
