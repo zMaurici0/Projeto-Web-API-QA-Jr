@@ -99,31 +99,19 @@ Resultados:
 
 ## ▶️ Como rodar os testes
 
-### 1️⃣ Clonar o repositório
-
-```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-```
-
-### 2️⃣ Acessar a pasta do projeto
-
-```bash
-cd seu-repositorio
-```
-
-### 3️⃣ Instalar as dependências
+### Instalar as dependências
 
 ```bash
 npm install
 ```
 
-### 4️⃣ Instalar os navegadores do Playwright
+### Instalar o Playwright
 
 ```bash
 npx playwright install
 ```
 
-### 5️⃣ Formas de rodar os testes
+### Formas de rodar os testes
 
 - rodar todos
 ```bash
