@@ -1,6 +1,10 @@
 
 ## Projeto QA Automation – Web & API Testing (Automation Exercise)
 
+![Playwright](https://img.shields.io/badge/Playwright-Test%20Automation-green)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow)
+![Node.js](https://img.shields.io/badge/Runtime-Node.js-brightgreen)
+
 Este projeto demonstra habilidades práticas de Quality Assurance (QA) aplicadas a testes Web e de API, utilizando ferramentas modernas de automação e validação de testes.
 
 O objetivo deste repositório é praticar atividades comuns do dia a dia de um QA Engineer, como validação de APIs, automação de testes e verificação do comportamento esperado da aplicação.
@@ -136,3 +140,11 @@ npx playwright show-report
 
 Site utilizado para testes:
 https://automationexercise.com/
+
+Este site oferece funcionalidades típicas de um e-commerce, permitindo validar cenários reais de testes como:
+
+- registro e login de usuários
+- navegação entre produtos
+- busca de produtos
+- visualização de detalhes
+- interação com elementos da interface
