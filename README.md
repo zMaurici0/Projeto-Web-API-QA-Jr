@@ -70,13 +70,13 @@ Resultados:
 
 ## 💼 Skills Demonstradas
 
-✅ Testes End-to-End (E2E)
-✅ Testes Funcionais e de Interface do Usuário (UI)
-✅ Testes de API (REST – GET, POST, PUT, DELETE)
-✅ Testes de CRUD em API
-✅ Testes Negativos
-✅ Validação de Respostas (Status Codes e respostas da API)
-✅ Testes de Integração
+[x] Testes End-to-End (E2E)
+[x] Testes Funcionais e de Interface do Usuário (UI)
+[x] Testes de API (REST – GET, POST, PUT, DELETE)
+[x] Testes de CRUD em API
+[x] Testes Negativos
+[x] Validação de Respostas (Status Codes e respostas da API)
+[x] Testes de Integração
 
 ## 📊 Estatísticas do Projeto
 
@@ -87,7 +87,6 @@ Resultados:
 
 ## 🛠️ Ferramentas & Tecnologias
 
-```
 | Categoria | Ferramentas |
 |----------|-------------|
 | Automação de Testes | Playwright |
@@ -96,7 +95,6 @@ Resultados:
 | Testes de API | Playwright Request API |
 | Testes Web | Playwright Browser Automation |
 | Versionamento | Git, GitHub |
-```
 
 ## ▶️ Como rodar os testes
 
