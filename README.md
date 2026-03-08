@@ -1,5 +1,5 @@
 
-# Projeto Web API QA - Automation Exercise
+## Projeto QA Automation – Web & API Testing (Automation Exercise)
 
 Este projeto demonstra habilidades práticas de Quality Assurance (QA) aplicadas a testes Web e de API, utilizando ferramentas modernas de automação e validação de testes.
 
@@ -7,10 +7,10 @@ O objetivo deste repositório é praticar atividades comuns do dia a dia de um Q
 
 O projeto foi feito utilizando o site Automation Exercise e simula cenários reais de testes, incluindo:
 
-- validação de respostas de API
-- verificação de status codes HTTP
-- criação de testes automatizados
-- validação de comportamento esperado da aplicação
+- Validação de respostas de API
+- Verificação de status codes HTTP
+- Criação de testes automatizados
+- Validação do comportamento esperado da aplicação
 
 ## 📋 Estrutura do Projeto
 ```
@@ -70,6 +70,7 @@ Resultados:
 
 ## 💼 Skills Demonstradas
 
+- [x] Page Object Model (POM)
 - [x] Testes End-to-End (E2E)
 - [x] Testes Funcionais e de Interface do Usuário (UI)
 - [x] Testes de API (REST – GET, POST, PUT, DELETE)
@@ -142,3 +143,9 @@ npx playwright test tests/web
 ```bash
 npx playwright show-report
 ```
+
+## 🌐 Aplicação Testada
+
+Site utilizado para testes:
+
+https://automationexercise.com/
