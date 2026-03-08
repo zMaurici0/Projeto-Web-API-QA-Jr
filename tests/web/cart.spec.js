@@ -1,5 +1,10 @@
 import {test, expect} from '@playwright/test'
 import { Cart } from '../../pages/cart'
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 test('Deve adicionar produtos no carrinho', async({page}) => {
 

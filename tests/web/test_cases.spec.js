@@ -1,4 +1,9 @@
 import {test, expect} from '@playwright/test'
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 test('Deve verificar a página de testes', async ({page}) =>{
     await page.goto('http://automationexercise.com')

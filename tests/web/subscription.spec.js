@@ -1,5 +1,10 @@
 import {test, expect} from '@playwright/test'
 import { Subscription } from '../../pages/subscription'
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 test('Verificar inscrição na home page', async({page}) =>{
 

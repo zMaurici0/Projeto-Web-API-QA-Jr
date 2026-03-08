@@ -1,4 +1,9 @@
 import {test, expect} from '@playwright/test'
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 // resolvi não usar POM aq pois o teste é praticamente só de expects
 test.beforeEach('Navegar para a página de produtos', async({page}) =>{

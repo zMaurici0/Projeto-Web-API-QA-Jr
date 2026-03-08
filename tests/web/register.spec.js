@@ -1,6 +1,11 @@
 import {test, expect} from '@playwright/test'
 import { Register } from '../../pages/register'
 import { randomInt } from 'node:crypto';
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 test('Deve registrar usuário com dados válidos', async ({page}) => {
 

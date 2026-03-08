@@ -3,6 +3,11 @@ import { PlaceOrder } from '../../pages/place_order'
 import { Register } from '../../pages/register';
 import { Cart } from '../../pages/cart';
 import { randomInt } from 'crypto';
+import { adBlock } from '../../helper/safegoto.js';
+
+test.beforeEach(async ({ page }) => {
+  await adBlock(page);
+});
 
 async function criarUsuario(page, registro) {
 
