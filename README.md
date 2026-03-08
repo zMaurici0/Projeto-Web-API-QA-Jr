@@ -147,5 +147,4 @@ npx playwright show-report
 ## 🌐 Aplicação Testada
 
 Site utilizado para testes:
-
 https://automationexercise.com/
