@@ -70,13 +70,13 @@ Resultados:
 
 ## 💼 Skills Demonstradas
 
-[x] Testes End-to-End (E2E)
-[x] Testes Funcionais e de Interface do Usuário (UI)
-[x] Testes de API (REST – GET, POST, PUT, DELETE)
-[x] Testes de CRUD em API
-[x] Testes Negativos
-[x] Validação de Respostas (Status Codes e respostas da API)
-[x] Testes de Integração
+- [x] Testes End-to-End (E2E)
+- [x] Testes Funcionais e de Interface do Usuário (UI)
+- [x] Testes de API (REST – GET, POST, PUT, DELETE)
+- [x] Testes de CRUD em API
+- [x] Testes Negativos
+- [x] Validação de Respostas (Status Codes e respostas da API)
+- [x] Testes de Integração
 
 ## 📊 Estatísticas do Projeto
 
