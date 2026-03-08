@@ -13,7 +13,7 @@ O projeto foi feito utilizando o site Automation Exercise e simula cenários rea
 - validação de comportamento esperado da aplicação
 
 ## 📋 Estrutura do Projeto
-
+```
 Projeto-Web-API-QA-Jr/
 │
 ├── .github/
@@ -31,3 +31,4 @@ Projeto-Web-API-QA-Jr/
 ├── package.json
 ├── package-lock.json
 └── .gitignore
+```
