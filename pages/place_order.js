@@ -21,7 +21,9 @@ export class PlaceOrder{
     }
 
     async goto(){
-        await this.page.goto('https://automationexercise.com/');
+        await this.page.goto('https://automationexercise.com/', {
+            waitUntil: 'domcontentloaded'
+        });
     }
 
     async login(){

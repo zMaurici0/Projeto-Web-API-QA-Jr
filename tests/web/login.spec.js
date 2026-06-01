@@ -8,14 +8,12 @@ test.beforeEach(async ({ page }) => {
   await adBlock(page);
 });
 
-const randomNumber = randomInt(1000000);
+const randomNumber = randomInt(1000000000);
 
 test.beforeEach('Deve criar novo usuário', async ({page}) => {
-
     const registro = new Register(page);
     await registro.goto();
     await expect(page).toHaveURL('https://automationexercise.com');
-
     await registro.registrarPrimeiraEtapa('ciclano', `Nome${randomNumber}@gmail.com`);
     await expect(page).toHaveURL('https://automationexercise.com/signup');
     await expect(page.getByText('Enter Account Information')).toBeVisible();
