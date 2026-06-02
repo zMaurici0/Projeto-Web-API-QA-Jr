@@ -103,6 +103,12 @@ Resultados:
 
 ## ▶️ Como rodar os testes
 
+### Clonar o repositório
+
+```bash
+git clone https://github.com/zMaurici0/Projeto-Web-API-QA-Jr.git
+```
+
 ### Instalar as dependências
 
 ```bash
